@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>My Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- we use ferer when we want wait the dosument to lade before runing the script , to get hte id element -->
+    <script src="main.js" async="defer"></script>
+
+</head>
+<body>
+    <header class="top-container">
+        <h2> Contact info </h2> 
+    </header>
+   
+    <section>
+    <div class="middle-container" style="margin: 40px auto;">
+            <p lang ="primary">Adresse : Glocksee str.5 </p>
+            <p lang ="primary">PLZ : 30169 Hannover</p>
+            <address><a href="halla:ha_sari82@example.com">halla.m.sari@gmail.com </a>
+            </address>
+            <p lang ="primary">phon num : 01629419963</p>
+    
+    
+        <hr>
+    
+        
+        <div class="big" style="left: 50px;">
+            <div class="input-group">
+                <form action="">
+                    <label id="name-label" for="">Name</label>
+                    <input id="fname" type="name" onkeyup="disName()">
+                    <label id="email-label" for="">Email</label>
+                    <input id="email-field" type="email" spellcheck="false" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </form>
+            </div>
+            <div class="">
+                <a id="submit-Buttom" href="mailto:someone@example.com"> <input type="submit" name="submit" value="Submit"></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <span id="display" style="font-size:300%; font-family: cursive; color: #ddc377; padding: 10px; " ></span>
+        
+    </div> 
+   
+   
+     <hr>
+
+    <div class="clearfix">
+        <div class="middle-container">
+        
+        <a  href="index3.html" > <img src="img/back.png" alt="" width="100px"  style="margin-left: 0%;"> </a>    
+        </div>
+    </div>
+
+
+    </section>       
+    <footer  class="bottom-container">
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://www.instagram.com/">insta</a>
+        <a href="contactinfo.html">contact-me</a>
+        <p>&copy Halla Sari.</p>
+    </footer>
+    
+</body>
+</html>
+
+<!-- <script>
+    //validate email
+    //-2- function to welcome the user after he write his name by using addevenlistener
+        function getname(){
+            let name =document.getElementById("fname").value;
+            document.getElementById("display").innerHTML= "wellcome  to my website "+ name;
+        }
+        
+        document.getElementById("fname").addEventListener("blur",getname);
+
+
+        var emailf=document.getElementById("email-field");
+        var emaill=document.getElementById("email-label");
+        var emailError=document.getElementById("email-error");
+        var namel=document.getElementById("name-label");
+
+        // -1-the label name disappear when the user start to write his/her name 
+        //and call this function in the html in side the input tage by onkeyup=""
+        function disName(){
+            namel.style.display ="none";
+        }
+
+        // disappear the email label 
+        
+        function validateEmail(){
+            emaill.style.display="none";
+
+        //-3-to make email validation 
+            if(!emailf.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z ]*[\.][a-z]{2,4}$/)){
+        // when the user start to enter the email amessge in span with htis messag appear til he write the valid email 
+                emailError.innerHTML = "plz enter  valid email ";
+                emailf.style.borderBottomColor = "red";
+        // the error sms go down smoothly and in css write transition: top 0.5s;
+                emailError.style.top = "120%";  
+                return false;
+            }
+            emailError.innerHTML = "";
+            emailf.style.borderBottomColor = "#11999E";
+            return true ;   
+        }
+    </script>
+    -->

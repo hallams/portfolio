@@ -1,0 +1,411 @@
+/* universal selctor - css elment selector - class selector */
+/*The CSS rule below will affect every HTML element on the page:*/
+#quotation{
+  padding-bottom: 40px; 
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic; 
+  width: 300px; 
+  position: absolute;
+}
+blockquote{
+  margin-top: 120px;
+  margin-left: 70px;
+  color: #031a1a;
+}
+* {
+    color: rgb(239, 166, 203);
+  }
+
+body{
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: serif;
+}
+h1{ 
+    font-size:  5.625rem; 
+    line-height: 2;
+    margin: 30px auto 0 auto ;
+    font-family: 'Courier New', Courier, monospace;
+    color: #66BFBF;
+}
+
+ 
+
+h2{
+    color:#66BFBF;
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+   
+}
+
+h3{
+    color: #11999E;
+}
+
+/* only <h3> elements with class="large" will be so*/
+
+h3.large {
+    font-size: 150%;
+    
+    
+  }
+
+p{
+    color:#66BFBF;
+    font-weight: normal;
+}
+hr{
+   border: dotted #0b3737 6px ;
+   border-bottom: none; 
+   width: 10%;
+   margin: 50px auto  ;
+}
+a{
+    color: rgb(165, 131, 16) ;
+    font-family: sans-serif;
+    margin: 10px 20px 0 0 ;
+    text-decoration: none;
+}
+a:hover{
+    color: #e9f7f7;
+}
+
+
+.top-container {
+    background-color: #e4f6f6;
+    position: relative;
+    padding-top: 15px;
+
+}
+.middle-container {
+    background-color: rgb(255, 255, 255);
+    margin: 100px 0;
+    position: relative;
+
+    
+   
+}
+.bottom-container{
+    background-color: #031a1a;
+    padding: 50px 0 20px;
+   
+    
+}
+
+/*............................. circle and float img and text in index.html ..........................*/
+
+.img-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.code-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    float:left ;
+    margin-right: 30px ;
+
+}
+
+.chilli-img{
+    width: ;
+    float:right ;
+    margin-left: 30px ;
+    
+
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100PX auto 150PX auto;
+    text-align: left;
+    
+}
+
+
+/*....................................... music ..kind of music ............................................*/
+* {
+    box-sizing: border-box;
+  }
+.img-container {
+    float: left;
+    padding: 5px;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+
+  }
+ 
+  /* content property = after before */
+  /* The clear property specifies what should happen with the element that is next to a floating element.
+  The clear property can have one of the following values:
+  none - The element is not pushed below left or right floated elements. This is default
+  left - The element is pushed below left floated elements
+  right - The element is pushed below right floated elements
+  both - The element is pushed below both left and right floated elements
+  inherit - The element inherits the clear value from its parent */
+.clearfix:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.code-text{
+    height: 200px;
+    width: 200px;
+    float:left ;
+    margin-right: 30px ;
+    border: #40514e;
+}
+
+/*............................... flex box in music list ...................................*/
+
+/*.flex-container {
+    height: 100px;
+    display: flex;
+    background-color: #f4ecd9;
+    width:65%   ;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    
+  }
+  
+.flex-container > div {
+    display: flex;
+    background-color: #66bfbf;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 15px;
+    border-radius: 50%;
+    
+  }
+  */
+
+  .flex {
+    display: flex;
+    background-color: #ffffff;
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+   /* flex-flow: ;*/
+
+}
+/*child flex*/
+.flex div {
+    display: flex;
+    background-color: #66bfbf;
+    color: rgb(255, 255, 255);
+    width: 25%;
+    padding: 20px;
+    border-radius: ;
+    line-height: 75px;
+    margin: 10px;
+    justify-content:center ;
+
+
+
+}
+/*........................... inherit ......................*/
+/* div 
+{
+  text-align: center
+
+  
+}
+
+div h2 
+{
+  text-align : inherit;
+
+
+} */
+
+
+/*..................................... contact ................................................*/
+
+/*    
+input[type=text] {
+    width: 20%;
+    height: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(181, 143, 16);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    color: aliceblue;
+}
+
+/* the input field gets a color when it gets focus (clicked on) and the border become black         */
+/*
+input[type=text]:focus {
+    background-color: lightblue;
+    border: 3px solid #555;
+
+}
+.my-button {
+padding: 1rem 0,9rem;
+background: pink;
+font: inherit;
+text-align: center;
+padding: 3  px ;
+
+/* --------------------contact2-----------------------------*/
+.big{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-group{
+  width: 80%;
+  max-width: 300px;
+  position: relative;
+
+}
+#email-label{
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+  color: #777;
+  font-size: 18px;
+  transition: ;
+}
+#name-label{
+  display: block;
+  position: absolute;
+  bottom: px;
+  left: px;
+  color: #777;
+  font-size: 18px;
+  transition: bottom 0.3s;
+
+}
+#fname{
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #555;
+  background: transparent;
+  outline: none;
+  font-size: 26px;
+  padding: 5px 2px;
+  position: relative;
+  z-index: 10;
+}
+#email-field{
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #555;
+  background: transparent;
+  outline: none;
+  font-size: 26px;
+  padding: 5px 2px;
+  position: relative;
+  z-index: 10;
+}
+#email-error{
+  position: absolute;
+  top: 100%;
+  left: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  color: red;
+  transition: top 0.5s;
+}
+#submit-Buttom{
+  position: relative;
+  top: 100px;
+  right: 300px;;
+
+
+
+}
+/* --------------------------aufgabe von pavi.................................... */
+/* address {
+display: block;
+font-style: italic;
+} */
+
+/*
+p,
+form,
+[lang ="primary"] {
+  color: red;
+}
+
+/* atrubut selctor */
+/*
+body [type="t"]
+{
+    text-align: left;
+    
+  }
+
+   li[type="a"] {  
+    list-style-type: lower-alpha;
+    background: #df163e;
+  }
+  
+  li[type="b" s] {
+    list-style-type: lower-alpha;
+    background: rgb(232, 235, 232);
+  }
+  
+  li[type="B" s] {
+    list-style-type: upper-alpha;
+    background: grey;
+  }
+  
+  li[type="c" i] {
+    list-style-type: upper-alpha;
+    background: green;
+  }
+  */
+/* ........................ photo site ....................... */
+
+
+.gallery {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  overflow-x: scroll;
+
+}
+
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  auto auto auto auto; 
+    grid-gap: 10px;
+    padding: 10px;
+    /* flex: none; */
+}
+.gallery div img{
+    width: 200px;
+  height: 200px;
+  margin: 10px;
+  filter: grayscale(100%);
+  transition: 1s;
+  border-radius: 50%;
+
+} 
+.gallery div img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+
+}
+
